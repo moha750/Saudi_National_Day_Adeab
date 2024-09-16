@@ -1,0 +1,277 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: b;
+  src: url(b.ttf);
+}
+
+@font-face {
+  font-family: r;
+  src: url(b.ttf);
+}
+
+body {
+  background:  #4DA454;
+  background-repeat: no-repeat;
+}
+
+.ideaCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#createIdea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	position: absolute;
+  height: 140vw;
+  top: -135vw;
+  width: 90vw;
+  font-size: 24px;
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+}
+
+#openIdea {
+	position: absolute;
+  bottom: -20px;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: rgb(255, 255, 255);
+  color: #006847;
+  font-size: 4vw;
+  text-decoration: none;
+  font-family: b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.titleForm {
+  font-family: r;
+  font-size: 6vw;
+  color: #4DA454;
+}
+
+p {
+  font-family: r;
+  font-size: 3.3vw;
+  color: #006847;
+}
+
+.input{
+  position:relative;
+  margin: 0.3vw 0vw;
+}
+
+.input span{
+  position:absolute;
+  right:0;
+  top:0px;
+  font-size:13px;
+  background-color: white;
+  color:#4DA454;
+  font-family: r;
+}
+
+input{
+  background-color: white;
+  width:70vw;
+  height:8vw;
+  border:none;
+  outline:none;
+  padding:0 10px;
+  box-sizing:border-box;
+  font-size:3.3vw;       
+  border-radius:5px;
+  margin-top: 16px;
+  text-align: right;
+  color: #006847;
+  font-family: b;
+  border-top: 1.8px solid #006847;
+  border-right: 1.8px solid #006847;
+  border-left: 1.8px solid #006847;
+  border-bottom: 4px solid #006847;
+  transition: 1s;
+}
+
+textarea {
+width:70vw;
+height:40vw;
+border:none;
+outline:none;
+padding:0 10px;
+box-sizing:border-box;
+font-size:3.3vw;
+border-radius:5px;
+margin-top: 16px;
+text-align: right;
+color: #006847;
+font-family: b;
+border-top: 1.8px solid #006847;
+border-right: 1.8px solid #006847;
+border-left: 1.8px solid #006847;
+border-bottom: 4px solid #006847;
+transition: 1s;
+}
+
+::placeholder{
+  color:#6b4e4550
+}
+
+button{
+  height:40px;
+  width:40vw;
+  background-color:#4DA454;
+  font-size:3.6vw;
+  color:#fff;
+  border-radius:5px;
+  cursor:pointer;
+  transition:all 0.5s;
+  border: none;
+  font-family: b;
+  margin: 15px 0px 12px 0px;
+}
+
+button:hover {
+  background-color:#006847;
+}
+
+.bar {
+  height: 50px;
+  width: 500px;
+  background-color: #aaaaaa;
+}
+
+.progress {
+  background-color: #006847;
+  height: 100%;
+  width: 4%;
+}
+
+.uploadPercentage {
+  font-size: 25px;
+  color: black;
+}
+
+#posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70vw;
+  margin: 0vw auto;
+  margin-top: 20vw;
+}
+
+.postTitle {
+  color: #fff;
+  font-family: b;
+  font-size: 6vw;
+}
+
+.postBody {
+  color: #fff;
+  font-family: b;
+  font-size: 4vw;
+  padding: 3vw;
+}
+
+.postOwner {
+  color: #fff;
+  font-family: r;
+  font-size: 3vw;
+}
+
+.img {
+  width: 24vw;
+}
+
+.hr {
+  width: 70vw;
+  margin: 0vw auto;
+  margin: 4vw;
+
+}
+
+/* .card-body {
+} */
+
+/* .hr {
+
+} */
+
+
+
+.vis {
+  color: #fff;
+  text-align: center;
+  font-family: b;
+}
+
+#progress {
+  color: #4DA454;
+  font-family: r;
+  font-size: 4.5vw;
+}
+
+#swal2-title {
+  font-family: b;
+  font-size: 7vw;
+  color: #4DA454;
+}
+
+a {
+  position: relative;
+  color: #fff;
+  font-size: 5vw;
+  bottom: 3vw;
+  text-decoration: none;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  transition: opacity 0.75s, visiblity 0.75s;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #006847;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  form {
+    transform: rotate(0turn);
+  }to {
+    transform: rotate(1turn);
+  }
+}
